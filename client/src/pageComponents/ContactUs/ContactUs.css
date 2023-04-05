@@ -1,0 +1,38 @@
+.contactForm {
+    margin: 0 auto;
+    width: 60%;
+}
+.note {
+    font-family: cursive;
+}
+.contactForm label {
+    font-family: 'Bradley Hand';
+    font-size: 1.5vw;
+}
+.contactForm h1 {
+    font-family: 'Bradley Hand';
+    font-weight: bolder;
+    font-size: 3vw;
+}
+.alert {
+    width: 50%;
+    margin: 0 auto;
+    box-shadow: 10px 10px 10px black;
+    border: 3px groove silver;
+}
+.alert button {
+    margin: 3px;
+}
+@media screen and (max-width: 900px) {
+    .contactForm label {
+        font-family: 'Bradley Hand';
+        font-size: 10px;
+    }
+    .contactForm input,.contactForm textarea {
+        font-size: 10px;
+    }
+    .com-btn {
+        padding: 3px;
+        font-size: 2vw;
+    }
+}

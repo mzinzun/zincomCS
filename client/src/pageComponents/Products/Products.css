@@ -1,0 +1,101 @@
+/* ============================================================================================*/
+/*          Catagories component CSS Settings                                                                                                                             */
+/* ============================================================================================*/
+
+.catSection {
+	margin: 20px 5px;
+}
+.catList {
+margin: 10px 0 0 0 ;
+padding: 0;
+width: 100%;
+}
+.catList li {
+	padding: 3px;
+	margin: 0 1px;
+	list-style: none;
+	background-color: whitesmoke;
+	/* border: 2px groove silver;  */
+	display: inline;
+}
+.catList li:hover {
+	background-color: gainsboro;
+	color:Navy;
+   cursor: pointer;
+}
+.catList li.active {
+	background-color: navy;
+	color: whitesmoke;
+   cursor: pointer;
+}
+/* ============================================================================================*/
+/*          ProductsList component CSS Settings                                        	                                                                                  */
+/* ============================================================================================*/
+.prodsList td {
+	font-size: 12px;
+	padding: 2px 5px;
+}
+.prodsList th {
+	margin: 0;
+	color: goldenrod;
+}
+/* ============================================================================================*/
+/*          ShoppingCart component CSS Settings                                                                                                              		    */
+/* ============================================================================================*/
+.cart {
+	margin-top: 20px;
+   text-align: center;
+	border-radius: 10px;
+	box-shadow: 0px 5px 5px gray;
+	overflow: hidden;
+}
+.cart td {
+	font-size: 12px;
+	padding: 2px 5px;
+	width: 20px;
+}
+/* .list-group-item{
+	margin: 0;
+	padding: 0;
+} */
+.list-group-item.active{
+	background-color: gainsboro;
+	border: 2px inset gray;
+	color: black;
+	margin: 0;
+}
+/* ============================================================================================*/
+/*          PurchaseHistory component CSS Settings                                                                                                           		   */
+/* ============================================================================================*/
+.hist-ul {
+	padding-inline-start: 5px; 
+}
+.hist-ul li:hover{
+	background-color:  whitesmoke;
+}
+.liFont {
+	color: red;
+	font-size: 1.2vw;
+}
+.detail-btn {
+	margin: 2px 0;
+	padding: 1px 2px;
+	font-size: 1vw;
+}
+.hist-btn {
+	margin: 5px;
+	width: 30%;
+}
+.detail-header{
+	height: 125px;
+	border-bottom: 2px groove gray
+	
+}
+.detail-header p{
+	margin: 0;
+	font-family: cursive;
+}
+
+
+
+

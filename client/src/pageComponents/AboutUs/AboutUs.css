@@ -1,0 +1,24 @@
+.about {
+    position: relative;
+    background-image: url("../images/aboutUs1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 125%;
+    background-position: left;
+    border: thick groove;
+    height: 100%;
+}
+.article-heading {
+    padding: 15px;
+    color: navy;
+    font-family: cursive;
+    font-weight: bolder;
+    background-color: gainsboro;
+}
+.article-main {
+    padding: 15px;
+    color: navy;
+    font-family: cursive;
+    font-weight: bolder;
+    background-color: aliceblue;
+    font-size: 2.5vw;
+}

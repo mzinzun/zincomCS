@@ -1,0 +1,58 @@
+.portalPage {
+    height: 98%;
+}
+.portalFormSection {
+    font-size: 12px;
+}
+.portalPage form label {
+    width: 70px;
+    padding: 2px;
+}
+.portalPage form input  {
+    width: 25vw;
+    padding: 2px;
+}
+.portalForm-btn {
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.portalForm-btn:hover {
+    background-color: gold;
+}
+.portalTableSection {
+    font-size: 12px;
+}
+.recsTable {
+    font-size: 12px;
+}
+.recsTable tr:hover {
+    background-color:  blanchedalmond;
+    cursor: pointer;
+}
+.portalMenu {
+    max-width: 100px;
+}
+.portalNav {
+    margin: 20px;
+}
+.btnActive {
+    color: red;
+ }
+.defaultView {
+    padding: 10vh;
+    /* margin: 100px; */
+    color: navy;
+}
+.portalBtn:hover {
+    background-color:rgba(64, 64, 212, 0.39);
+}
+.portalBtn {
+    border-radius: 1px 10px 10px 1px;
+   margin: 10px 5px;
+}
+form {
+    margin: 10px 0;
+}
+

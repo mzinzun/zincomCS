@@ -1,0 +1,42 @@
+.coContainer button {
+    margin: 0  10px;
+}
+form {
+    border: 3px groove silver;
+    padding: 10px;
+}
+.tableItems td {
+    font-size: 12px;
+}
+.btz {
+    margin:  0;
+}
+/* ============================================================================================*/
+/*          SubmitNotice component CSS Settings                                        	                                                                                  */
+/* ============================================================================================*/
+.subNotice {
+    border: 5px groove steelblue;
+    margin: 20px auto;
+    padding: 10px;
+   height: 300px;
+   width: 600px;
+   overflow: hidden;
+   box-shadow: 1px 1.5vw 1.5vw
+   
+}
+.subNotice h1 {
+    font-family: cursive;
+    color: dimgray;
+    
+}
+.subNotice a {
+    float: right;
+    margin: 10px;
+    left: 100%;
+    width: 100px;
+    height: auto;
+    padding: 3px;
+}
+#ccTYpe {
+    overflow: hidden;
+}

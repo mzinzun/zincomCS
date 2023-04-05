@@ -1,0 +1,118 @@
+
+/* ============================================================================================*/
+/*          global element settings                                                                                                                                                   */
+/* ============================================================================================*/
+.container-fluid {
+    width: 90%;
+}
+body {
+   background-color: rgb(233,236,239);
+}
+.appContainer {
+    background-image: url("../images/logo10.png");
+    /* background-repeat: no-repeat; */
+    background-size: 15rem;
+    background-position:top left;
+}
+header, main, footer {
+    padding: 5px 10px;
+}
+a {
+    width: 100%;
+    height: 100%
+}
+tfoot tr, tfoot td {
+    text-align: right;
+}
+/* ============================================================================================*/
+/*          nav bar settings                                                                                                                                                               */
+/* ============================================================================================*/
+nav {
+    position: relative;
+    margin: 40px auto;
+    padding: 20px 0 5px 0;
+}
+nav .btn {
+   font-family: 'Bradley Hand';
+   font-size: 1.25em;
+   margin: 0 20px;
+}
+/* ============================================================================================*/
+/*          global main body settings                                                                                                                                                */
+/* ============================================================================================*/
+main {
+    padding-top: 10px;
+    position: relative;
+    height: 60vh;
+    z-index: 10;
+    overflow-y: auto;
+}
+.subHeading {
+    margin: 0;
+    padding: 0;
+}
+.subHeading h2, .subHeading h3{
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Apple Chancery', Zapfino, 'Trebuchet MS', 'Snell Roundhand',SignPainter, Phosphate, Noteworthy, Papyrus, 'Microsoft Sans Serif', 'Marker Felt', Luminari,'Lucida Grande',Herculanum, Copperplate, Chalkduster, 'Brush Script MT', 'Bodoni 72', 'Bangla MN', Ayuthaya,'Avenir Next', cursive; */
+    font-family: Phosphate, Zapfino;
+    text-shadow: 1px 1px 1px gray;
+    letter-spacing: .2rem;
+}
+/* ===========================================================================================*/
+/*          global footer settings                                                                                                                                                     */
+/* ===========================================================================================*/
+footer {
+    height: 50px;
+     overflow: none;
+     color: navy
+ }
+ footer p {
+     font-size: 1vw;
+ }
+ footer .ui.button {
+     font-size: 1vw;
+     padding: 5px;
+ }
+ 
+ .invalidNotice {
+    color: Red;
+    background-color: tan;
+}
+/* ============================================================================================*/
+/*          responsive media query settings                                                                                                                                    */
+/* ============================================================================================*/
+
+@media screen and (max-width: 900px) {
+    .subHeading h2 {
+        font-size: 3vw;
+    }
+
+    nav {
+        position: relative;
+        margin: 10px 0;
+        /* padding: 20px 0 5px 0; */
+        /* z-index: 1; */
+    }
+    nav .btn {
+       font-size: .75em;
+       margin: 0 5px;
+    }
+   
+}
+@media print {
+     aside, nav, .btn, .noPrint {
+         display: none;
+     }
+   .printVer {
+    margin: 50px auto;
+   }
+   button {
+       background-color: red
+   }
+   header {
+       margin: 50px auto;
+   }
+}
+
+

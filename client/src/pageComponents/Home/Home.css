@@ -1,0 +1,130 @@
+
+.homePage {
+    position: relative;
+    margin: 20px 0 0 0;
+    padding: 0;
+}
+
+.slideWrapper{
+    position: relative;
+    margin: 0 auto;
+    box-sizing: content;
+    border-radius: 10px;
+    box-shadow:  0 0 10px navy;
+    width: 688px;
+    height: 400px;
+    overflow: hidden;
+    text-align: left;
+    z-index: 20;
+}
+.mySlides{
+    height: 400px;
+    width: 3500px;
+    position: relative;
+    left: 0px;
+    top: 0;
+}
+.mySlides{
+    animation: SliderLeft;
+    animation-duration: 20s;
+    animation-timing-function: steps(1, end);
+    animation-iteration-count: infinite;
+}
+
+.mySlides figure {
+    height: 400px;
+    width: 700px;
+    position: relative;
+    display: inline-block;
+}
+.mySlides img {
+    width: 700px;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+}
+.mySlides figcaption {
+    Position: absolute;
+    bottom: 10%;
+    padding: 0 10px;
+    text-align: center;
+    width: 100%;
+    font-family: "BebaBold";
+    line-height: 1em;
+    color: navy;
+    font-size: 3vw;
+    text-shadow: whitesmoke 1px 0 10px;
+    opacity: 1;
+    z-index: 30;
+}
+
+@keyframes SliderLeft {
+    0% {left: -12px;}
+      20% {left: -12px;animation-timing-function: linear;}
+    25% {left: -712px;}
+      45% {left: -712px;animation-timing-function: linear;}
+    50% {left: -1412px;}
+       70% {left: -1412px;animation-timing-function: linear;}
+    75% {left: -2112px;}
+      95% {left: -2112px;animation-timing-function: linear;}
+    100% {left: -2812px;}
+}
+@keyframes SliderLeft700 {
+    0% {left: -12px;}
+      20% {left: -12px;animation-timing-function: linear;}
+    25% {left: -312px;}
+      45% {left: -312px;animation-timing-function: linear;}
+    50% {left: -612px;}
+       70% {left: -612px;animation-timing-function: linear;}
+    75% {left: -912px;}
+      95% {left: -912px;animation-timing-function: linear;}
+    100% {left: -1212px;}
+}
+@media screen and (max-width: 850px) {
+    main {
+        height: 55vh;
+    }
+    .homePage {
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .subHeading h2 {
+        font-size: 3vw;
+    }
+    .mySlides{
+        animation: SliderLeft700;
+        animation-duration: 20s;
+        animation-timing-function: steps(1, end);
+        animation-iteration-count: infinite;
+    }
+    .mySlides{
+        height: 200px;
+        width: 1500px;
+        position: relative;
+        left: 0px;
+        top: 0;
+    }
+    .slideWrapper{
+        position: relative;
+        box-shadow:  0 0 5px navy;
+        width: 288px;
+        height: 200px;
+        overflow: hidden;
+        text-align: left;
+        z-index: 20;
+    }
+    .mySlides figure {
+        height: 200px;
+        width: 300px;
+        position: relative;
+        display: inline-block;
+    }
+    .mySlides img {
+        width: 300px;
+        height: 200px;
+        margin: 0;
+        padding: 0;
+    }
+   
+}
