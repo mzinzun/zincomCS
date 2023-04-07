@@ -4,9 +4,9 @@ const sql1 = require('./zincomDB');
 const db = mysql.createConnection (
 	{
 	host: 'localhost',
-	port: 3306,
 	user: "root",
-	password: "Yahweh3@ms",
+	port: 3306,
+	password: "dev1root",
 	multipleStatements: true
 });
 // Definition for Initial Database if does not exist!!
