@@ -23,7 +23,9 @@ This Thesis Project is intended to build on the competency-project site which Mo
 ## <em>Configure Database:</em>
          Database connections happen through the Nodejs mysql2 (for mysql 8.) module.  I also added a SQL query that creates the zincomdb Schema, tables, and data at startup if they do not exist. There are no steps needed to startup the MySQL database.
 
-        ** Note: The root user password for MySQL must be 'dev1root'. 
+        ** Important Note: 
+                1. Make sure mysql is installed and running in the The background.
+                2. The root user password for MySQL must be 'dev1root'. Or you can change the password in the sqlStartup.js file (line 9) to match your root password.
 
 ## <em>Install Dependencies:</em>
         Dependency are installed from your terminal using npm. From your terminal, download the zincomCS folder. In the zincomCS folder are 2 sub-folders: client and server.  Each folder contains a portion of the project development MERN stack. You MUST install dependencies for each folder . To do this: 
