@@ -2,8 +2,10 @@ import React, {Component} from 'react';
 import {Header, Footer} from "../../components/components"
 import {Home,Products,CheckOut,AboutUs,ContactUs,Login,Portal} from "../pages"
 import {BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom';
+import {createBrowserHistory} from 'history';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+let history = createBrowserHistory();
 
 // use axios module for http requests
 import axios from 'axios';
@@ -14,8 +16,8 @@ const api = axios.create({
 
 // configure react component
 class App extends Component {
-    constructor(props){
-        super(props);
+    constructor(){
+        super();
         this.state={
             productSelections:  [],
             hideNav: true,
@@ -24,6 +26,7 @@ class App extends Component {
     }
     componentDidMount(){
         console.log('Component "App" did Mount');
+        // console.log('props',props);
         api.get('/profile').then( (result)=>{
             console.log('result: ',result.data);
             !result.data.noUser&&this.setState({
@@ -44,7 +47,7 @@ class App extends Component {
         api.get('/logout').then(result => {
             this.setState({hideNav: true});
             console.log(result.data.goHome);
-        // (result.data.goHome === true)&&props.history.push('/')
+        (result.data.goHome === true)&&history.push('/');
         });
     }
 

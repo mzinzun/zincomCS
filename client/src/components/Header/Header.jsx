@@ -11,8 +11,8 @@ class Header extends Component {
             <header >
                 <div className= "row">
                     <div className= "col-2 col-md-3">  <Link to = "/" className="logo"> <h1 >Z</h1><h3>INCOM</h3></Link></div>
-                    <div  className= "col-10 col-md-6 p-4 p-md-1"className = "zTitle"><h1 >Zincom Computer Solutions</h1></div>
-                    <div  className= "col-md-3 text-center p-4" className= "zTitle"></div>
+                    <div  className= "col-10 col-md-6 p-4 p-md-1 zTitle" ><h1 >Zincom Computer Solutions</h1></div>
+                    <div  className= "col-md-3 text-center p-4 zTitle" ></div>
                 </div>
             </header>
         )

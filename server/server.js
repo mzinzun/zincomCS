@@ -72,8 +72,22 @@ app.get('/failed', (req,res)=>{
     res.json({noGood: true});
 });
 app.get('/logout', function(req,res){
-    req.logout();
+    console.log ('logout endpoint reached');
+    req.logout(function(err) {
+        if (err) { return next(err); }
+        // res.redirect('/');
+      });
+    // req.logout();
     res.json({goHome: true});
+
+    // app.post('/logout', function(req, res, next){
+        // req.logout(function(err) {
+        //   if (err) { return next(err); }
+        //   res.redirect('/');
+        // });
+    //   });
+
+
 });
 function isLoggedIn(req,res,done){
     if (req.user) {
