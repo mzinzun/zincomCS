@@ -21,34 +21,34 @@ This Thesis Project is intended to build on the competency-project site which Mo
 
 # Getting Started:
 ## <em>Configure Database:</em>
-        Unlike MongoDB, MySQL server does not need to started externally. Database connections happen through the Nodejs mysql module.  I also added a SQL query that creates the zincomdb Schema, tables, and data at startup if they do not exist. There are no steps needed to startup the MySQL database.
+         Database connections happen through the Nodejs mysql2 (for mysql 8.) module.  I also added a SQL query that creates the zincomdb Schema, tables, and data at startup if they do not exist. There are no steps needed to startup the MySQL database.
 
-        ** Note: The root user password for MySQL must be empty. 
+        ** Note: The root user password for MySQL must be 'dev1root'. 
 
 ## <em>Install Dependencies:</em>
-        Dependency are installed from your terminal using npm. From your terminal, go to the  project folder (thesis-project). In the thesis-project folder are 2 sub-folders: client and server.  Each folder contains a portion of the project development MERN stack. You MUST install dependencies for each folder . To do this: 
+        Dependency are installed from your terminal using npm. From your terminal, download the zincomCS folder. In the zincomCS folder are 2 sub-folders: client and server.  Each folder contains a portion of the project development MERN stack. You MUST install dependencies for each folder . To do this: 
 
-        1. From the project folder (thesis-project), go to the server folder (e.g from bash: cd server) 
+        1. From the zincomCS folder, go to the server folder (e.g from bash: cd server) 
         2. insure that package.json exist in the folder
         3. type npm install (You will see the installation process start)
-        4. When process completes return to  project folder (thesis-project) (e.g. from bash: cd ..).
-        5. From the project folder (thesis-project), go to client folder and repeat 2 through 4
+        4. When process completes return to  zincomCS folder (e.g. from bash: cd ..).
+        5. From the zincomCS folder, go to client folder and repeat 2 through 4
 
 ##  <em>Starting the site:</em>
 ### To use the web site you must first start the web server and then start client index page. 
 > <b>How to start and access the servers</b><br>
 
-        1. From the project folder (thesis-project), go to the server folder (e.g from bash: cd server) 
+        1. From the zincomCS folder, go to the server folder (e.g from bash: cd server) 
         2. type npm start: you will see a console message telling you:
-                'Zincom Server now running on port 8080'
-                'connected as id 26'
+                'Zincom Server now running on port 8000'
+                'connected as id 26' (id # may vary)
                 'connected to zincomdb Database'
                 -- The terminal window is now being used by the server.
                 -- Press <ctl>-c  to stop server when finished using server
-        3. In a new terminal window,  from the project folder (thesis-project), go to the client folder 
+        3. In a new terminal window,  from the zincomCS folder, go to the client folder 
         4. type npm start: you will see a console message telling you: 'You can now view client in the browser.
-                On Your Network:  http://<ip address>:3030' 
-        5. -- You can now go to your browser and type: 'http://localhost:3030' to start the web site
+                On Your Network:  http://<ip address>:3000' 
+        5. -- You can now go to your browser and type: 'http://localhost:3000' to start the web site (this project is using react-scripts so the browser should automatically open to the site)
 
 ## Using the front-end as a typical user
 
