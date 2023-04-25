@@ -198,7 +198,7 @@ class Products extends Component {
                />)
          }
             return(
-                <div>
+                <main className='productContainer'>
                     <div className= "catSection text-center subHeading">
                     <h3 >Select products to add to cart</h3>
                     <h4>View Purchase History? Enter email address</h4>
@@ -227,7 +227,7 @@ class Products extends Component {
                         handleProductSelections = {this.props.handleProductSelections}
                         /></aside>
                     </div>
-                </div>
+                </main>
             )
     }
 }

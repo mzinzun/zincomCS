@@ -73,7 +73,7 @@ class App extends Component {
                     <Link to = '/portal' ><button hidden = {this.state.hideNav} type="button" className="btn btn-dark">Portal</button></Link>
                     <Link to = '/' ><button hidden = {this.state.hideNav} type="button" className="btn btn-dark" onClick = {this.handleLogOut}>Log Out</button></Link>
                 </nav>
-                <main>
+                {/* <main> */}
                         <Switch>
                             <Route exact path="/" >
                                 <Home handleProductSelections = {this.handleProductSelections}/>
@@ -102,7 +102,7 @@ class App extends Component {
                             </Route>
                             <Route path="/*" component = {NotFound} />
                         </Switch> 
-                </main>
+                {/* </main> */}
                 </div>
                 <Footer />
             </Router>
