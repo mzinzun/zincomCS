@@ -1,5 +1,5 @@
 {
-  "homepage": "http://mzinzun.github.io/zincomcs",
+  "homepage": "http://mzinzun.github.io/zincomcs/client",
   "name": "client",
   "version": "1.0.0",
   "description": "Zincom CS - React/Axios/ client environment",
