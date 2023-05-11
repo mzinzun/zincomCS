@@ -26,7 +26,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 // configure MySQL connection
-const mysql = require('mysql');
+const mysql = require('mysql2');
 const db = require('./connection/sqlStartup');
 
 // Configure Passport

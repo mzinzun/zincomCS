@@ -19,23 +19,23 @@ class Home extends Component {
 					<section className="slideWrapper">
 						<div className="mySlides">
 							<figure>
-								<img src="./img/solution2.jpg" />
+								<img src="../img/soliution3.jpg" />
 								<figcaption >Computer Solutions for Todays Problems</figcaption>
 							</figure>
 							<figure>
-								<img src="./img/comp030.jpg" />
+								<img src="../img/comp030.jpg" />
 								<figcaption >Products You Can Build With</figcaption>
 							</figure>
 							<figure>
-								<img src="./img/computer2.jpg" />
+								<img src="../img/computer2.jpg" />
 								<figcaption >Custom Development Tailored to Your Needs</figcaption>
 							</figure>
 							<figure>
-								<img src="./img/solution3.jpg" />
+								<img src="../img/solution3.jpg" />
 								<figcaption >Designed With You In Mind</figcaption>
 							</figure>
 							<figure>
-								<img src="./img/solution2.jpg" />
+								<img src="../img/solution2.jpg" />
 								<figcaption >Computer Solutions for Todays Problems</figcaption>
 							</figure>
 						</div>

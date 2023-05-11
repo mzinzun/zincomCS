@@ -1,29 +1,22 @@
 
-/* ============================================================================================*/
-/*          global element settings                                                                                                                                                   */
-/* ============================================================================================*/
+/* ==============================================================*/
+/*          global element settings                             */
+/* ==============================================================*/
 .container-fluid {
     width: 90%;
 }
-/* body {
+body {
    background-color: rgb(233,236,239);
    background-image: url("../images/logo10.png");
     background-size: 15rem;
     background-position:top left;
-} */
-body {
-    background-color: rgb(233,236,239);
-    background-image: url("../images/computerBoard2.jpg");
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-position:center;
- }
+}
 
 .appContainer {
-    /* background-image: url("../images/logo10.png"); */
-    /* background-repeat: no-repeat; */
-    /* background-size: 15rem;
-    background-position:top left; */
+    background-image: url("../images/logo10.png");
+    background-repeat: no-repeat;
+    background-size: 15rem; 
+    background-position:top left;
 }
 header, main, footer {
     padding: 5px 10px;
