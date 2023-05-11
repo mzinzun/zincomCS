@@ -21,7 +21,6 @@ app.use(session({
   saveUninitialized: true
 }));
  
-
 app.use(passport.initialize());
 app.use(passport.session());
 
@@ -131,13 +130,6 @@ app.post('/login',  passport.authenticate('local', {failureRedirect: `/failed`})
     //         };
     // })
 });
-
-
-
-
-//  check for existing data for initial startUp- 
-// const startUpData = require('./data/startData')
-// startUpData();
 
 // configure endpoint Routes
 const routes = require('./routes/routes');
