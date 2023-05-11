@@ -21,6 +21,7 @@ app.use(session({
   saveUninitialized: true
 }));
  
+
 app.use(passport.initialize());
 app.use(passport.session());
 
@@ -71,22 +72,8 @@ app.get('/failed', (req,res)=>{
     res.json({noGood: true});
 });
 app.get('/logout', function(req,res){
-    console.log ('logout endpoint reached');
-    req.logout(function(err) {
-        if (err) { return next(err); }
-        // res.redirect('/');
-      });
-    // req.logout();
+    req.logout();
     res.json({goHome: true});
-
-    // app.post('/logout', function(req, res, next){
-        // req.logout(function(err) {
-        //   if (err) { return next(err); }
-        //   res.redirect('/');
-        // });
-    //   });
-
-
 });
 function isLoggedIn(req,res,done){
     if (req.user) {
@@ -130,6 +117,13 @@ app.post('/login',  passport.authenticate('local', {failureRedirect: `/failed`})
     //         };
     // })
 });
+
+
+
+
+//  check for existing data for initial startUp- 
+// const startUpData = require('./data/startData')
+// startUpData();
 
 // configure endpoint Routes
 const routes = require('./routes/routes');

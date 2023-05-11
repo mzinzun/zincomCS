@@ -1,21 +1,7 @@
 /* ============================================================================================*/
 /*          Catagories component CSS Settings                                                                                                                             */
 /* ============================================================================================*/
-body {
-	/* background-color: rgb(233,236,239); */
-	
- }
 
- .productContainer {
-	/* background-image: url("../images/computerBoard1.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position:center; */
-	background-color: rgba(187, 161, 31,.7);
-   background-image: url("../images/logo10.png");
-    background-size: 15rem;
-    background-position:top left;
- }
 .catSection {
 	margin: 20px 5px;
 }
@@ -23,7 +9,6 @@ body {
 margin: 10px 0 0 0 ;
 padding: 0;
 width: 100%;
-
 }
 .catList li {
 	padding: 3px;
@@ -46,16 +31,9 @@ width: 100%;
 /* ============================================================================================*/
 /*          ProductsList component CSS Settings                                        	                                                                                  */
 /* ============================================================================================*/
-tbody,thead,.catList {
-	background-color: rgba(0,0,0,.5);
-}
 .prodsList td {
-	/* font-size: 12px; */
+	font-size: 12px;
 	padding: 2px 5px;
-	/* font-size: 3rem; */
-	color: antiquewhite !important;
-	color: rgb(233,236,239) !important;
-	text-shadow: 0px 0px 10px gray;
 }
 .prodsList th {
 	margin: 0;

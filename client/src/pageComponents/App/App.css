@@ -1,21 +1,17 @@
 
-/* ==============================================================*/
-/*          global element settings                             */
-/* ==============================================================*/
+/* ============================================================================================*/
+/*          global element settings                                                                                                                                                   */
+/* ============================================================================================*/
 .container-fluid {
     width: 90%;
 }
 body {
    background-color: rgb(233,236,239);
-   background-image: url("../images/logo10.png");
-    background-size: 15rem;
-    background-position:top left;
 }
-
 .appContainer {
     background-image: url("../images/logo10.png");
-    background-repeat: no-repeat;
-    background-size: 15rem; 
+    /* background-repeat: no-repeat; */
+    background-size: 15rem;
     background-position:top left;
 }
 header, main, footer {
