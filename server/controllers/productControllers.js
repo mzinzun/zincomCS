@@ -2,17 +2,22 @@
 const db = require('../connection/sqlStartup');
 
 const productCatagories = function (req,res) {
-	db.query (
-		'SELECT distinct `catagory` FROM `products` ORDER BY `catagory` ', function(err, result) {
-			if (!err) {
-				res.json(result);
-			} else {
-				console.log(err);
-					res.json({successful: false, error: err});
-			};
+	db.query('use zincomdb', function(err,results) {
+		db.query (
+			'SELECT distinct `catagory` FROM `products` ORDER BY `catagory` ', function(err, result) {
+				if (!err) {
+					res.json(result);
+				} else {
+					console.log(err);
+						res.json({successful: false, error: err});
+				};
 		});
+
+		// db.end(); // Close the connection when done
+	});
+
 };
-const productsByCatagory = function (req,res) {	
+const productsByCatagory = function (req,res) {
 	const cat = ((req.params.cat).trim());
 	db.query (
 		"SELECT * FROM `products` where `catagory` = ?",cat, function(err, result) {
@@ -37,7 +42,7 @@ const productBySKU = function (req,res) {
 		});
 };
 const productBySKUmulti = function (req,res) {
-	// store array of skus' 
+	// store array of skus'
 	const info = req.body;
 	// create multiple select statements for number of items purchased searched by sku
 	var sql1 = 'SELECT * FROM `products` where  `sku` = ?;'

@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Zincom CS - NodeJS/MySql Server environment",
   "main": "server.js",
+
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npx nodemon server.js"
@@ -16,6 +17,7 @@
     "express-session": "^1.17.2",
     "mysql2": "^3.3.0",
     "nodemon": "^2.0.12",
+    "npm": "^10.2.5",
     "passport": "^0.6.0",
     "passport-local": "^1.0.0"
   }

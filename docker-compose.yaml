@@ -1,0 +1,46 @@
+volumes:
+  mysql-data:
+    external: true
+services:
+  mysql:
+    image: mysql:8.0.30
+    # image: mariadb:10.6.4-focal
+    container_name: mysql-container
+    restart: always
+    volumes:
+      - mysql-data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: dbuser
+      MYSQL_DATABASE: zincomdb
+      MYSQL_USER: dbuser
+      MYSQL_PASSWORD: dbuser
+    ports:
+      - 3306:3306
+  server:
+    environment:
+      - NODE_ENV=development
+    build:
+      context: server
+      dockerfile: Dockerfile
+    ports:
+      - 8000:8000
+    volumes:
+      - ./server:/app
+    depends_on:
+      - mysql
+  client:
+    # image: node:18-bullseye
+    # command: run.sh
+    working_dir: /app
+    volumes:
+      - ./client:/app
+    ports:
+      - 3000:3000
+    environment:
+      NODE_ENV: development
+      HOST: "0.0.0.0"
+      PUBLIC_URL: http://localhost:3000
+      REACT_APP_API_HOST: ${REACT_APP_API_HOST}
+    build:
+      context: client
+      dockerfile: Dockerfile

@@ -6,6 +6,7 @@ const portalControllers = require('../controllers/portalControllers');
 module.exports = (app) => {
 
 //Products routes
+
 app.get('/catagoryList', productControllers.productCatagories);
 app.get('/getProductsByCatagory/:cat', productControllers.productsByCatagory);
 app.get('/getProductBySKU/:sku', productControllers.productBySKU);

@@ -20,7 +20,7 @@ app.use(session({
     resave: false,
   saveUninitialized: true
 }));
- 
+
 
 app.use(passport.initialize());
 app.use(passport.session());
@@ -44,7 +44,7 @@ passport.use(new LocalStrategy(
                     }
                     if (users.length > 0) {
                         const message= {message: 'no username exists'};
-                        (user.password === password)?done(null, user):done(null,false,message); 
+                        (user.password === password)?done(null, user):done(null,false,message);
                     }
                 } else {
                     console.log('there was an error at LocalStrategy: ',err)
@@ -63,10 +63,10 @@ passport.deserializeUser(function(user,done){
     });
 });
 
-// app.get('/failed2/:message', (req,res)=>{
-//     console.log('failed2: ', req.params);
-//     res.json({noGood: true});
-// });
+
+app.get('/test', function(req,res) {
+    res.send('test');
+  });
 app.get('/failed', (req,res)=>{
     console.log('============== req info is  ==========================', req.user)
     res.json({noGood: true});
@@ -98,10 +98,10 @@ app.post('/login',  passport.authenticate('local', {failureRedirect: `/failed`})
     res.json(user)
 // app.get('/portal/:username', function(req,res){
 
-// })  ;  
-    
-    
-    
+// })  ;
+
+
+
     // const password = "admin1";
     // db.query (
     //     "SELECT * FROM `employees` where `username` = ?",[req.body.username], function(err,user) {
@@ -121,7 +121,7 @@ app.post('/login',  passport.authenticate('local', {failureRedirect: `/failed`})
 
 
 
-//  check for existing data for initial startUp- 
+//  check for existing data for initial startUp-
 // const startUpData = require('./data/startData')
 // startUpData();
 

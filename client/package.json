@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Zincom CS - React/Axios/ client environment",
   "main": "index.js",
+  "homepage": ".",
   "scripts": {
     "start": "PORT=3000 react-scripts start",
     "build": "react-scripts build",
