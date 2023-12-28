@@ -34,6 +34,7 @@ const LocalStrategy = require('passport-local').Strategy;
 
 passport.use(new LocalStrategy(
     function(username, password, done) {
+        console.log('executing LocalStrategy');
         db.query (
             "SELECT * FROM `employees` where `username` = ?",[username], function(err,users) {
                 const user = users[0];
@@ -66,7 +67,7 @@ passport.deserializeUser(function(user,done){
 
 app.get('/test', function(req,res) {
     res.send('test');
-  });
+});
 app.get('/failed', (req,res)=>{
     console.log('============== req info is  ==========================', req.user)
     res.json({noGood: true});
@@ -88,7 +89,7 @@ app.get('/profile', isLoggedIn, (req,res) =>{
     delete user.password;
     console.log('============================ req info is  ==========================', req.user);
     res.json(user);
-})
+});
 
 app.post('/login',  passport.authenticate('local', {failureRedirect: `/failed`}), function(req,res) {
     console.log('++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++successful sign in');
